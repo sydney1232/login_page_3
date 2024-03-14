@@ -107,7 +107,12 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                           ],
                         ),
-                      )
+                      ),
+                      SizedBox(height: 40),
+                      Text(
+                        "Forgot Password?",
+                        style: TextStyle(color: Colors.grey),
+                      ),
                     ],
                   ),
                 ),
