@@ -54,11 +54,63 @@ class _LoginPageState extends State<LoginPage> {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(60),
-                      topRight: Radius.circular(60),
-                    )),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(60),
+                    topRight: Radius.circular(60),
+                  ),
+                ),
+                child: Padding(
+                  padding: EdgeInsets.all(30),
+                  child: Column(
+                    children: [
+                      SizedBox(height: 60),
+                      Container(
+                        padding: EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            const BoxShadow(
+                              offset: Offset(0, 10),
+                              blurRadius: 20,
+                              color: Color.fromRGBO(225, 95, 27, .3),
+                            )
+                          ],
+                        ),
+                        child: Column(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border(
+                                  bottom:
+                                      BorderSide(color: Colors.grey.shade300),
+                                ),
+                              ),
+                              child: TextField(
+                                decoration: InputDecoration(
+                                  hintStyle: TextStyle(color: Colors.grey),
+                                  border: InputBorder.none,
+                                  hintText: "Email or Phone number",
+                                ),
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(),
+                              child: TextField(
+                                decoration: InputDecoration(
+                                  hintStyle: TextStyle(color: Colors.grey),
+                                  border: InputBorder.none,
+                                  hintText: "Password",
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
             )
           ],
