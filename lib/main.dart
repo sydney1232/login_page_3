@@ -50,6 +50,17 @@ class _LoginPageState extends State<LoginPage> {
                 ],
               ),
             ),
+            SizedBox(height: 20),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(60),
+                      topRight: Radius.circular(60),
+                    )),
+              ),
+            )
           ],
         ),
       ),
