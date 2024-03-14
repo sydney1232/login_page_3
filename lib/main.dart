@@ -113,6 +113,23 @@ class _LoginPageState extends State<LoginPage> {
                         "Forgot Password?",
                         style: TextStyle(color: Colors.grey),
                       ),
+                      SizedBox(height: 40),
+                      Container(
+                        height: 50,
+                        margin: EdgeInsets.symmetric(horizontal: 50),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: Colors.orange.shade900),
+                        child: Center(
+                          child: Text(
+                            "Login",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
